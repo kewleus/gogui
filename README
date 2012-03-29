@@ -1,0 +1,11 @@
+This library was initially developed for Ogre3D 1.7.2 using the Gorilla GUI framework created by 'betajaen'.
+
+I've decided to copy my tutorial for using Ogre and Gorilla from my site and host the code here as well. This project contains a basic wrapper for managing Gorilla's screens and layers so you don't need to maintain more local variables and just easier keeping track of what's been loaded. The gui class lets you create screens and layers by name and get them by name, and also lets you manage which atlases have been loaded.
+
+The main part of this library is an Item Bar, Item Box, Quick Menu and Popup Box. The Item Bar is a bar across the bottom of the screen that holds Item Boxes and can scroll to accomodate more than the screen fits, this can easily be adapted into an action bar or similar for games. It also lets you keep track of inventory / number of clicks to let you disable when they run out. The Item Box is what you can select in the Item Bar, it allows for hover effects, item capacities, auto disable and selected item effects. The Quick Menu class is designed for exactly what it sounds like, same with the Popup Box.
+
+With the Popup Box:
+showMessage - adds a message to the stack
+dismiss - pops a message off the stack and if there are no more messages hides the box.
+
+There are several screenshots of the gui in the root directory.
